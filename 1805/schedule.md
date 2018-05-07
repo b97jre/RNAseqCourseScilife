@@ -32,7 +32,7 @@ Room:
 **10:15-11:15** 
 **11:15-12:00** [Exercise: ](../labs/index) (Johan Reimegård, Jakub Orschewski, Nina Norgren, Jeanette Tångrot )  
 **12.00-13.00** Lunch  
-**13.00-14.00** [Lecture: miRNA analysis](slides/sRNAs.pdf) (Jakub Orschewski)
+**13.00-14.00** [Lecture: miRNA analysis](slides/sRNAs.pdf) (Jakub Orschewski)  
 **14.00-15.00** [Exercise: ](../labs/index) (Johan Reimegård, Jakub Orschewski, Nina Norgren, Jeanette Tångrot )    
 **15.00-16.00** [Lecture: Summary of the week](slides/summary.pdf) (Johan Reimegård)  
    
