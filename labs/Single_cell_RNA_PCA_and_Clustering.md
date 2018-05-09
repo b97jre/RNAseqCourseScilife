@@ -9,7 +9,7 @@ Here are some examples on how to run PCA/Clustering on a single cell RNA-seq dat
 The dataset used is single-cell RNA-seq data from mouse embryonic development from Deng. et al. Science 2014, Vol. 343 no. 6167 pp. 193-196, "Single-Cell RNA-Seq Reveals Dynamic, Random Monoallelic Gene Expression in Mammalian Cells"
 
 All data you need is available in the folder: 
-/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/pca_clust
+/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/pca_clust
 
 Copy all that data to your folder of choice (on uppmax or your own computer) and start R in that folder. 
 

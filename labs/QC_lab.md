@@ -9,7 +9,7 @@ In this tutorial we will go through some of the key steps in performing a qualit
 
 
 All the data you need for this lab is available in the folder:
-`/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/QC/data/`
+`/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/data/`
 
 Or via web-browser [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/data).
 
@@ -56,7 +56,7 @@ In this case, only run FastQC on one file and take a look at the output. We have
 [FastQC results](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/fastQC/)
 
 Or directly at uppmax at:
-`/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/QC/fastQC/`
+`/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/fastQC/`
 
 Take a look at some other file and see if it look similar in quality.
 
@@ -67,7 +67,7 @@ MultiQC is a program that creates summaries over all samples for several differe
 	module load bioinfo-tools
 	module load MultiQC/0.8
 	multiqc /folder/with/FastQC_results/
-	# in this case the folder is /proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/QC/fastQC/
+	# in this case the folder is /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/fastQC/
 
 This should create 1 folder named `multiqc_data` with some general stats, links to all files etc. And one file `multiqc_report.html`. Have a look at the report you created or at the one we alredy ran [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/fastQC/multiqc_report.html)
 
@@ -170,7 +170,7 @@ The RseQC package is allready installed at Uppmax. Load the package:
 
 Some steps of the RseQC package require a file with gene annotations in BED format. These can be downloaded from various sources. Some of the more common ones are UCSC, RefSeq and Ensembl. In this case, the RseQC team have already created annotation files in some common formats that can be downloaded from their website, but if you have data for a less studied organism you may need to create a BED-file on your own. 
 
-Two annotation files have already been downloaded into `/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/QC/annotation` for you to use. These are: hg19.HouseKeepingGenes.bed  and hg19_RefSeq.bed. The folder also contains a reduced annotation file hg19_RefSeq_top1000.bed to speed things up. 
+Two annotation files have already been downloaded into `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/annotation` for you to use. These are: hg19.HouseKeepingGenes.bed  and hg19_RefSeq.bed. The folder also contains a reduced annotation file hg19_RefSeq_top1000.bed to speed things up. 
 
 In this tutorial we will not run all the different parts of the RseQC package, only the most relevant ones for this experiment. The different scripts in the RseQC package are well described at [their website](http://rseqc.sourceforge.net/), so read the instructions there and specify the input/output files to fit your file names and folder structure. 
 

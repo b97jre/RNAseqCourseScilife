@@ -35,7 +35,7 @@ And create a directory to work in:
 	mkdir ~/RNAseqCourse/smallRNA
 
 All data and scripts required for this exercise can be found in 
-``/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/smallRNA`` on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/smallRNA/).
+``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/smallRNA`` on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/smallRNA/).
 
 
 This includes:
@@ -48,7 +48,7 @@ This includes:
 
 Copy these files in the directory you will use for this exercise. On UPPMAX you can use the following command:
 
-	cp -r /proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/smallRNA dest
+	cp -r /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/smallRNA dest
 
 where dest is the destination directory. (This might take a while since the fastq files are quite large)
 
@@ -107,7 +107,7 @@ We can now summarize the mapped reads to see which microRNAs are expressed in th
 
 Press space to scroll down into the file and q to exit the viewer. 
 
-We are only interested in the reads mapping to known microRNA loci in [mirBase](http://www.mirbase.org), which is the "official" data base of microRNAs in many different species. The file ``/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/smallRNA/mirbase/dme_mirbase_FORMAT2016.gff3`` contains the locations of all microRNAs on the fly genome. Use ``less`` to have a look at this file. [featureCounts](http://bioinf.wehi.edu.au/featureCounts/) is a useful program for counting reads mapping to different genomic regions. Run it like this, for all sam file at once:
+We are only interested in the reads mapping to known microRNA loci in [mirBase](http://www.mirbase.org), which is the "official" data base of microRNAs in many different species. The file ``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/smallRNA/mirbase/dme_mirbase_FORMAT2016.gff3`` contains the locations of all microRNAs on the fly genome. Use ``less`` to have a look at this file. [featureCounts](http://bioinf.wehi.edu.au/featureCounts/) is a useful program for counting reads mapping to different genomic regions. Run it like this, for all sam file at once:
 
 	featureCounts -t miRNA -g Name -O -s 1 -M -a <mirbasefile> -o <outfile> <samfiles> 
 

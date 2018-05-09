@@ -27,9 +27,8 @@ For this exercise we have pre-calculated read counts per gene (according to Ense
      samtools view accepted_hits_137_1.bam | sort > accepted_hits_prehtseq_137_1.sam
      htseq-count -s no -q accepted_hits_prehtseq_137_1.sam Homo_sapiens.GRCh37.71.gtf > 137_1.counts
 
-and combined the counts into a single table. You will import this table into R and use DESeq2 to get a list of differentially expressed genes. You can get the count table on UPPMAX here: ``/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/diffExp/count_table.txt``
+and combined the counts into a single table. You will import this table into R and use DESeq2 to get a list of differentially expressed genes. You can get the count table on UPPMAX here: ``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/diffExp/count_table.txt``
 
-Or you can download it [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/diffExp/count_table.txt)
 
 Start R and load the DESeq2 package:
 

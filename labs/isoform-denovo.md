@@ -46,11 +46,11 @@ To access the data there are two options.
 ### If you are working on uppmax
 
 All the data you need for this lab is available in the folder:
-``/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/deNovo/data/``
+``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/deNovo/data/``
 
 Copy the data to your folder 
 
-	cp /proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/deNovo/data/* . 
+	cp /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/deNovo/data/* . 
 
 
 ### If you are working from somewhere else
@@ -134,7 +134,7 @@ Convert them to bam format, sort and index them using samtools:
   
 	mkdir STARtrinityMapping
     
-	STARlong  --genomeDir /proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/reference/hg19_Gencode14.overhang75  --readFilesIn trinity_out_dir/Trinity.fasta --runThreadN 2 --outSAMstrandField intronMotif --outFileNamePrefix STARtrinityMapping/
+	STARlong  --genomeDir /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/reference/hg19_Gencode14.overhang75  --readFilesIn trinity_out_dir/Trinity.fasta --runThreadN 2 --outSAMstrandField intronMotif --outFileNamePrefix STARtrinityMapping/
     samtools sort -o trinityTranscripts.bam STARtrinityMapping/Aligned.out.sam
     samtools index trinityTranscripts.bam
 	
@@ -146,9 +146,8 @@ If you want to view all the 12 different samples you can download the assembled 
 We have also merged the reads from all the 12 samples and used all the reads to create assembled transcripts.
 On uppmax you can copy the BAM files folder to your folder
 
-   cp -r /proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/otherData/deNovo/BAMfiles/ .  
+   cp -r /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/deNovo/BAMfiles/ .  
 
-They can also be downloaded from [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/deNovo/BAMfiles/).
 
 Download a few of them and compare the experiments to see if you can identify different isoforms. How does the de novo assembled transcripts compare to the reference based isoform detection program? 
     

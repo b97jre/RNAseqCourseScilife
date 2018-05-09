@@ -16,26 +16,26 @@ that we will examine in more detail in later exercises.
 
 All FASTQ files that you will need for this exercise can be found in
  
-	/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/referenceBased/data
+	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/referenceBased/data
 
 on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/referenceBased/data).
 
 If you want to map more files for practice, you can continue with files for additional samples, found in
 	
-	/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/RAB11FIP5_fastqFiles
+	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/RAB11FIP5_fastqFiles
 
 on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/RAB11FIP5_fastqFiles).
 
 A pre-built human genome index for HISAT2 is found here
  
-	/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/reference/hg19_hisat2
+	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/reference/hg19_hisat2
 
 on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/reference/hg19_hisat2).
 Note that *hg19* indicates the version of the human genome assembly that was indexed.
 
 A pre-built human genome index for STAR is found here
  
-	/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/reference/hg19_Gencode14.overhang75
+	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/reference/hg19_Gencode14.overhang75
 
 on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/reference/hg19_Gencode14.overhang75).
  

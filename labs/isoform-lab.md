@@ -16,13 +16,13 @@ that we will examine in more detail in a later exercise.
 
 There are files that have been pre-mapped using TopHat and those can be found in
 
-	/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/RAB11FIP5/BAMfiles
+	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/refBasedAssembly/RAB11FIP5/BAMfiles
 
 on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/RAB11FIP5/BAMfiles).
 
 There are files that have been pre-mapped and pre-analyzed using TopHat and Cufflinks and those can be found in
 
-	/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/RAB11FIP5/GTFfiles
+	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/refBasedAssembly/RAB11FIP5/GTFfiles
 	
 on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/RAB11FIP5/GTFfiles).
  
@@ -78,8 +78,8 @@ where ``assembly_GTF_list.txt`` is a text file with a list (one per line) of GTF
 
 ## Quantification with Cufflinks
 
-Cufflinks is a well-known software package for estimating gene and isoform abundances in BAM or SAM files based on an annotation file in GTF format. However, we run into problems here because of the small file size. Cufflinks needs a certain amount of data to be able to do its estimations so it will not work very well on our small alignment files. Therefore we have run it on the full alignment files on each sample and provided the merged results at ``/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/otherData/isoform_fpkm_table.txt``
-(isoform FPKM) and ``/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/otherData/RNAseqfpkm_table.txt``.
+Cufflinks is a well-known software package for estimating gene and isoform abundances in BAM or SAM files based on an annotation file in GTF format. However, we run into problems here because of the small file size. Cufflinks needs a certain amount of data to be able to do its estimations so it will not work very well on our small alignment files. Therefore we have run it on the full alignment files on each sample and provided the merged results at ``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/isoform_fpkm_table.txt``
+(isoform FPKM) and ``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/RNAseqfpkm_table.txt``.
 If you are interested, you can check in the isoform FPKM file how much each isoform 
 is deemed to have been expressed by Cufflinks, but we will not go into that today. 
 (These results will be revisited tomorrow, in the differential expression lab exercise.)
@@ -87,7 +87,7 @@ is deemed to have been expressed by Cufflinks, but we will not go into that toda
 For reference, the commands we used were of the form
 
      # Only for reference, does not need to be executed during the exercise
-     cufflinks -p 8 -G /proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/isoform/otherData/Homo_sapiens.GRCh38.77.fixed.gtf \
+     cufflinks -p 8 -G /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/Homo_sapiens.GRCh38.77.fixed.gtf \
 	   -o cufflinks_out_137_1 accepted_hits_137_1.bam
 
 The ``-G`` option points to an annotation file in GTF format for which to calculate
