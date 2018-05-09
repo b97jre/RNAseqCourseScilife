@@ -35,7 +35,7 @@ And create a directory to work in:
 	mkdir ~/RNAseqCourse/smallRNA
 
 All data and scripts required for this exercise can be found in 
-``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/smallRNA`` on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/smallRNA/).
+``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/smallRNA`` on UPPMAX.
 
 
 This includes:

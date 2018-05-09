@@ -59,14 +59,14 @@ If everything worked you will now have:
 
 Since it takes time to generate all data, we have already created other files that you can also download and view in your browser. This includes result files for the subset of reads that map to the *RAB11FIP5* gene. These mappings have been used for reference based assembly of isoforms. 
 
-You can find all BAM files and GTF files for all samples [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/RAB11FIP5) using a web browser. You can then view them in IGV using "Import from URL".
+You can find all BAM files and GTF files for all samples here  `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/refBasedAssembly/RAB11FIP`. You can then view them in IGV using "Import from URL".
 
 ### Importing de novo assembled transcripts mapped to the *RAB11FIP5* gene
 
 We have also created result files from *de novo* transcriptome assembly using the the subset of reads that map to the *RAB11FIP5* gene. The assembled transcripts were
 then mapped back to the genome. 
 
-You can download all BAM files and GTF files for all samples [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/deNovo/BAMfiles) using a web browser.
+You can download all BAM files and GTF files for all samples from uppmax from here `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/deNovo/BAMfiles`
 
 
 ## Importing reference based isoform info to the genome
@@ -75,14 +75,14 @@ In addition, we provide result files for *all* reads that were mapped to the gen
 reference based assembly of isoforms across the entire genome. There is a GTF file with the final merged isoform  
 information from all 12 samples.  
 
-You can download all BAM files and GTF files for all samples [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/Genome) using a web browser.
+You can download all BAM files and GTF files for all samples from uppmax from here `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/refBasedAssembly/Genome`. 
 
 ## Importing the peptide track for the *RAB11FIP5* gene and the genome                                                           
 
 As mentioned above, we will look at some identified peptides from a mass-spectrometry 
 experiment, and compare those with RNA-seq data from the same cell line.
 
-You can download the BED file containing all peptides mapped to the genome [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData).
+You can download the BED file containing all peptides mapped to the genome from uppmax `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData` .
 
 
 From the name of the BED file (human_A431_global-TDA-FDR1pc_green-known_red-novel.bed), IGV will automatically know to color the track according to peptide status

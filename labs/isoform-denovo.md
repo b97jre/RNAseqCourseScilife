@@ -53,9 +53,6 @@ Copy the data to your folder
 	cp /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/deNovo/data/* . 
 
 
-### If you are working from somewhere else
-
-You can download all data using a webinterface from [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/deNovo/data/) and put it in your working folder. 
 
 
 You should now have two fastq files in your working folder.

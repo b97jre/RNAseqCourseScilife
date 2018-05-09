@@ -11,8 +11,6 @@ In this tutorial we will go through some of the key steps in performing a qualit
 All the data you need for this lab is available in the folder:
 `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/data/`
 
-Or via web-browser [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/data).
-
 
 This folder contains:
 
@@ -52,10 +50,7 @@ To run FastQC on uppmax you first need to load the module:
 	# You can use wildcards to run on all FASTQ files in a directory:
 	fastqc -o outdir /proj/b2013006/INBOX/FASTQ/*fastq
 
-In this case, only run FastQC on one file and take a look at the output. We have already prepared the outputs for all of the other samples. These can be viewed via a web-browser at:
-[FastQC results](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/fastQC/)
-
-Or directly at uppmax at:
+In this case, only run FastQC on one file and take a look at the output. We have already prepared the outputs for all of the other samples. These can be copied from uppmax at:
 `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/fastQC/`
 
 Take a look at some other file and see if it look similar in quality.
@@ -69,7 +64,7 @@ MultiQC is a program that creates summaries over all samples for several differe
 	multiqc /folder/with/FastQC_results/
 	# in this case the folder is /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/fastQC/
 
-This should create 1 folder named `multiqc_data` with some general stats, links to all files etc. And one file `multiqc_report.html`. Have a look at the report you created or at the one we alredy ran [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/fastQC/multiqc_report.html)
+This should create 1 folder named `multiqc_data` with some general stats, links to all files etc. And one file `multiqc_report.html`. Have a look at the report you created or at the one we alredy ran. You can find it on uppmax at `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/fastQC/multiqc_report.html` 
 
 
 # Mapping of reads - OBS! do not run now!
@@ -148,7 +143,7 @@ After mapping with star of all samples, we ran MultiQC to summarize all the logf
 	module load MultiQC/0.8
 	multiqc -d -dd 2 .
 
-You can se the output from that MultiQC report [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/output/multiqc_report_star.html)
+You can find the output from that MultiQC report on uppmax   `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/output/multiqc_report_star.htm`
 
 # After mapping: RseQC
 
@@ -196,7 +191,7 @@ Run RseQC for one sample and have a look at your output.
 
 # MultiQC summary of RSeQC output 
 
-We have ran RSeQC and MultiQC on all the samples in the project. The summary report from MultiQC can be found [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/QC/output/multiqc_report_rseqc.html). 
+We have ran RSeQC and MultiQC on all the samples in the project. The summary report from MultiQC can be found on uppmax `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/output/multiqc_report_rseqc.html` . 
 
 It was created using commands:
 

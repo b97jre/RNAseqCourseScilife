@@ -18,13 +18,13 @@ There are files that have been pre-mapped using TopHat and those can be found in
 
 	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/refBasedAssembly/RAB11FIP5/BAMfiles
 
-on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/RAB11FIP5/BAMfiles).
+on UPPMAX.
 
 There are files that have been pre-mapped and pre-analyzed using TopHat and Cufflinks and those can be found in
 
 	/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/isoform/otherData/refBasedAssembly/RAB11FIP5/GTFfiles
 	
-on UPPMAX and through this [URL](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/isoform/otherData/refBasedAssembly/RAB11FIP5/GTFfiles).
+on UPPMAX.
  
 
 ## Reference guided assembly using Cufflinks

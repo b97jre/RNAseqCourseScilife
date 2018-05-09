@@ -39,7 +39,6 @@ It may be advantageous to download the output to your own computer, install the 
 
 You can find a (gzipped archive of a) directory with CuffDiff output for a pairwise  differential expression analysis between all the time points on Uppmax at  `/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/diffExp/cuffdiff_all.tar.gz`. 
 
-Or you can download it [here](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/diffExp/cuffdiff_all.tar.gz)
 
 Remember to untar and unzip it:
 
