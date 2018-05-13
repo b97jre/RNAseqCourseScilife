@@ -37,7 +37,7 @@ Note: This program can be used for any type of NGS data, not only RNA-seq.
 To run FastQC on uppmax you first need to load the module:
 	
 	module load bioinfo-tools
-	module load FastQC/0.11.1
+	module load FastQC/0.11.5
 	
 	# To see help information on the FastQC package:
 	fastqc --help
@@ -60,7 +60,7 @@ Take a look at some other file and see if it look similar in quality.
 MultiQC is a program that creates summaries over all samples for several different types of QC-measures. You can read more about the program [here](http://multiqc.info/). It will automatically look for output files from the supported tools and make a summary of them. You can either go to the folder where you have the Fastqc output or run it with the path to the folder.  
 
 	module load bioinfo-tools
-	module load MultiQC/0.8
+	module load MultiQC/1.5
 	multiqc /folder/with/FastQC_results/
 	# in this case the folder is /proj/uppstore2017171/courses/RNAseqWorkshop/downloads/QC/fastQC/
 
@@ -75,7 +75,7 @@ In this exercise we will actually not do any mapping (that will be done in a lat
 	# NOTE: do not run, just an example of how we ran the program
 	
 	module load bioinfo-tools
-	module load star/2.3.1o
+	module load star
 	module load samtools
 	
 	cd /proj/b2013006/INBOX
@@ -161,7 +161,7 @@ Running all the QC steps takes a long time, so to save time, we only run the QC 
 The RseQC package is allready installed at Uppmax. Load the package:
 
     module add bioinfo-tools
-    module add rseqc/2.4
+    module add rseqc/2.6.4
 
 Some steps of the RseQC package require a file with gene annotations in BED format. These can be downloaded from various sources. Some of the more common ones are UCSC, RefSeq and Ensembl. In this case, the RseQC team have already created annotation files in some common formats that can be downloaded from their website, but if you have data for a less studied organism you may need to create a BED-file on your own. 
 
