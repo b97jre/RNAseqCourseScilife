@@ -12,14 +12,14 @@ Held in Uppsala May 14-16, 2018.
 
 ###  On Monday
 
-    interactive -A g2017027 -t 6:00:00 -p core -n 4 --reservation g2017027_1
+    interactive -A g2018011 -t 6:00:00 -p core -n 4 --reservation g2018011_1
 	
 ###  On Tuesday
 
-    interactive -A g2017027 -t 6:00:00 -p core -n 4 --reservation g2017027_2
+    interactive -A g2018011 -t 6:00:00 -p core -n 4 --reservation g2018011_2
 	
 ###  On Wednesday
 
-    interactive -A g2017027 -t 8:00:00 -p core -n 4 --reservation g2017027_3
+    interactive -A g2018011 -t 8:00:00 -p core -n 4 --reservation g2018011_3
 	
 	
