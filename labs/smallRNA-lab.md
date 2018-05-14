@@ -27,7 +27,7 @@ Running this on UPPMAX, start by loading the modules you will need:
 	module load bioinfo-tools
 	module load cutadapt
 	module load bowtie
-	module load subread/1.5.0
+	module load subread/1.5.2
 
 And create a directory to work in:
 
@@ -124,6 +124,7 @@ You will see a different prompt, since you are now typing commands to R. You can
 	exp.data <- count.data[,-1*1:6]      ## remove first 6 columns
 	rownames(exp.data) <- count.data[,1] ## use names of microRNAs as rownames in the table
 	colnames(exp.data) <- gsub(".sam", "", colnames(exp.data)) ## make column names of table nicer
+	colnames(exp.data) <- gsub("fastq.", "", colnames(exp.data))
 
 You can look at the first 20 rows of the table by typing:
 
@@ -180,7 +181,16 @@ Another way to get a global overview of the data is to use clustering and plot h
 
 In the resulting plot each library is a column and each microRNA is a row. The color indicates the expression levels, with red being no reads and more yellow indicating higher expression. The dendrogram at the top shows how the libraries cluster together. **What can you learn from looking at this plot?**
 
-(There are some problems displaying plots etc. on UPPMAX when running in interactive mode. If you have trouble viewing the PCA plots and heatmaps, try:
+Another function to create heatmaps R is *pheatmap*. To use it, do
+
+	library(pheatmap)
+	pheatmap(norm.data, scale="none", fontsize_row=3)
+
+If the library pheatmap isn't installed, you can download and install it with
+
+	install.packages("pheatmap")
+
+(There may be some problems displaying plots etc. on UPPMAX when running in interactive mode. If you have trouble viewing the PCA plots and heatmaps, try:
 
 - Log out of UPPMAX
 - Log into UPPMAX again
