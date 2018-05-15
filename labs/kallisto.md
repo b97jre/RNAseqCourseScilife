@@ -49,7 +49,7 @@ Now we can build the transcriptome index. Let's also time it to get a sense of h
 
 It should take less than 10 minutes.
 
-Next, download the FASTA files from the [download area](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/diffExp/FASTQ/) .
+Next, copy the FASTA files from uppmax ``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/diffExp/FASTQ/`` .
 When that is done, it's time for quantifying the FASTQ files against our Kallisto index with bootstrapping for later use in Sleuth. You could do that one by one, with a command like
 
     time kallisto/kallisto quant -i hsGRCh38_kallisto -t 4 -b 100 7_111116_AD0341ACXX_137_1_index1_1.fastq.gz 7_111116_AD0341ACXX_137_1_index1_2.fastq.gz -o sample1
@@ -66,7 +66,7 @@ Running Kallisto on all the 12 samples with 100 bootstraps may take an hour or s
 
 ## Running Sleuth
 
-Here we give an example workflow for a DE analysis in Sleuth based on the A431 data that we are using for all the DE analysis labs. Start by downloading the results from the [download area](https://export.uppmax.uu.se/b2013006/downloads/courses/RNAseqWorkshop/diffExp/kallisto_results.tar.gz). Download and extract the whole folder and make a note of where it is.
+Here we give an example workflow for a DE analysis in Sleuth based on the A431 data that we are using for all the DE analysis labs. Start by copy the results from uppmax ``/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/diffExp/kallisto_results.tar.gz``. Download and extract the whole folder and make a note of where it is.
 
 The Sleuth analysis is done entirely in R, so start your R environment and begin by installing the dependencies. This only needs to be done the first time, of course.
 

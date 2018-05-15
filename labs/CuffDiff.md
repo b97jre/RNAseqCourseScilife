@@ -37,7 +37,7 @@ Running Cuffdiff on the A431 RNA-seq data set would take too long for the purpos
 It may be advantageous to download the output to your own computer, install the cummeRbund package (after installing R if you don't have it) and do the visualizations there. Uppmax has R installed. If you haven't installed R ahead of the course, please find the appropriate download for your [here](http://ftp.sunet.se/pub/lang/CRAN/). 
 
 
-You can find a (gzipped archive of a) directory with CuffDiff output for a pairwise  differential expression analysis between all the time points on Uppmax at  `/proj/b2013006/webexport/downloads/courses/RNAseqWorkshop/diffExp/cuffdiff_all.tar.gz`. 
+You can find a (gzipped archive of a) directory with CuffDiff output for a pairwise  differential expression analysis between all the time points on Uppmax at  `/proj/uppstore2017171/courses/RNAseqWorkshop/downloads/diffExp/cuffdiff_all.tar.gz`. 
 
 
 Remember to untar and unzip it:
